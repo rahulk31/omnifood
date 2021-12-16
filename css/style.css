@@ -136,8 +136,37 @@
   font-weight: 400;
 }
 
-.step-img {
-  width: 30%;
+
+.step-img-box {
+  position: relative;
   margin: 0 auto;
-  display: block;
+  text-align: center;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.step-img-box::before {
+  z-index: -2;
+  width: 80%;
+  padding-bottom: 80%;
+  background-color: #fdf2e9;
+}
+
+.step-img-box::after {
+  z-index: -1;
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fae5d3;
+}
+
+.step-img {
+  width: 45%;
 }

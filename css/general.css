@@ -66,9 +66,12 @@ body {
 
 .grid {
   display: grid;
-  align-items: center;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+}
+
+.grid-center-v {
+    align-items: center;
 }
 
 .grid--2-cols {
