@@ -116,5 +116,51 @@
         margin-top: 1.8rem;
     }
 
+    /* mobile nav */
+    .btn-mobile-nav {
+        display: block;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.95);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+
+        /* did not use
+        display: none;
+        because no transition applies on it */
+
+        /* 1) visually hiding from screen */
+        opacity: 0;
+
+        /* 2) disabling pointer and keyboard captures */
+        pointer-events: none;
+
+        /* 3) hidding from screen readers */
+        visibility: hidden;
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+    
+    .main-nav-list {
+        flex-direction: column;
+        /* gap: 3.2rem; */
+    }
+
+    .main-nav-link:link {
+        font-size: 2.4rem;
+    }
+
     
 }

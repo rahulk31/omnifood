@@ -15,6 +15,26 @@
   height: 2.2rem;
 }
 
+/* mobile nav menu */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+
 /* ************************** */
 /* NAVIGATION */
 /* ************************** */
