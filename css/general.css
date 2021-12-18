@@ -43,6 +43,11 @@ Default: 9px
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -70,6 +75,11 @@ body {
   row-gap: 9.6rem;
 }
 
+.grid--footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
 }
@@ -88,6 +98,10 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .heading-primary,
@@ -126,6 +140,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -135,6 +150,10 @@ body {
   border-radius: 9px;
   transition: all 0.3s;
   font-weight: 600;
+
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .btn--full:link,
